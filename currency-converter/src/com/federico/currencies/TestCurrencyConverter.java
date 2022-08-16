@@ -14,9 +14,18 @@ public class TestCurrencyConverter {
 		
 		
 		CurrencyConverter converter = new CurrencyConverter();
+
 		
-		double result = converter.converter(200, argPeso, usDollar);
+		System.out.println("200 ARS to USD: " + 
+				converter.converter(200, argPeso, usDollar));
 		
-		System.out.println(result);
+		System.out.println("200 EUR to USD: " + 
+				converter.converter(200, euro, usDollar));
+		
+		System.out.println("200 BRL to USD: " + 
+				converter.converter(200, brReal, usDollar));
+		
+		System.out.println("200 GBP to USD: " + 
+				converter.converter(200, britishPound, usDollar));
 	}
 }
