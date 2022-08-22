@@ -7,19 +7,20 @@ import javax.swing.JOptionPane;
 public class CurrencyConverterLauncher {
 	public CurrencyConverterLauncher(){
 		//create currencies
-		CurrencyTemplate argPeso = new CurrencyTemplate("ARS",0.0073912009);
+		//Exchange rate last updated: 22 of August 2022
+		CurrencyTemplate argPeso = new CurrencyTemplate("ARS",0.0073183352);
 		new Currencies().addCurrencies(argPeso.getCode(), argPeso);
 		
 		CurrencyTemplate usDollar = new CurrencyTemplate("USD", 1);
 		new Currencies().addCurrencies(usDollar.getCode(), usDollar);
 		
-		CurrencyTemplate euro = new CurrencyTemplate("EUR", 1.01768);
+		CurrencyTemplate euro = new CurrencyTemplate("EUR", 0.99436129);
 		new Currencies().addCurrencies(euro.getCode(), euro);
 		
-		CurrencyTemplate brReal = new CurrencyTemplate("BRL", 0.19434152);
+		CurrencyTemplate brReal = new CurrencyTemplate("BRL", 0.19388413);
 		new Currencies().addCurrencies(brReal.getCode(), brReal);
 		
-		CurrencyTemplate britishPound = new CurrencyTemplate("GBP",1.2096954);
+		CurrencyTemplate britishPound = new CurrencyTemplate("GBP",1.1764113);
 		new Currencies().addCurrencies(britishPound.getCode(), britishPound);
 		//end create currencies
 		
@@ -64,7 +65,7 @@ public class CurrencyConverterLauncher {
 
 			}catch(NumberFormatException ex){
 				JOptionPane.showMessageDialog
-					(null,"Se ha introducido un valor inválido","Error", JOptionPane.ERROR_MESSAGE, null);
+					(null,"Se introdujo un dato inválido, solo se admiten números","Error", JOptionPane.ERROR_MESSAGE, null);
 				ex.printStackTrace();
 			}catch(NullPointerException ex) {
 				endProgram = true;
