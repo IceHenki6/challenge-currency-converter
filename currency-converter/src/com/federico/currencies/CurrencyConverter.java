@@ -4,7 +4,8 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class CurrencyConverter {
-	public double converter(float amount, Currency fromCurrency, Currency toCurrency) {
+	public double converter(double amount,
+			CurrencyTemplate fromCurrency, CurrencyTemplate toCurrency) {
 		double result = (amount * fromCurrency.getValue()) / toCurrency.getValue();
 		return round(result,2);
 	}
