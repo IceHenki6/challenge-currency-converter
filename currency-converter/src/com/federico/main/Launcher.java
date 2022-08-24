@@ -1,5 +1,7 @@
-package com.federico.currencies;
+package com.federico.main;
 
+import com.federico.currencies.*;
+import com.federico.measurementconverter.*;
 
 import javax.swing.JOptionPane;
 
@@ -7,7 +9,7 @@ public class Launcher {
 
 	public static void main(String[] args) {
 		boolean endProgram = false;
-		String[] possibleValues = { "Conversor de divisas", "Conversor de medidas"};
+		String[] converters = { "Conversor de divisas", "Conversor de medidas"};
 		
 		while(endProgram != true) {
 			String selectedValue = (String) JOptionPane.showInputDialog(null,
@@ -16,7 +18,7 @@ public class Launcher {
 
 			        JOptionPane.INFORMATION_MESSAGE, null,
 
-			        possibleValues, possibleValues[0]);
+			        converters, converters[0]);
 			
 			
 			if(selectedValue != null) {
