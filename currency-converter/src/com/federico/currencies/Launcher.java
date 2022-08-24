@@ -1,7 +1,5 @@
-package com.federico.main;
+package com.federico.currencies;
 
-import com.federico.currencies.*;
-import com.federico.measurementConverter.*;
 
 import javax.swing.JOptionPane;
 

@@ -1,4 +1,4 @@
-package com.federico.measurementConverter;
+package com.federico.currencies;
 
 import javax.swing.JOptionPane;
 

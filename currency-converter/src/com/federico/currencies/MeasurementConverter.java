@@ -1,4 +1,4 @@
-package com.federico.measurementConverter;
+package com.federico.currencies;
 
 public class MeasurementConverter {
 	//inches in centimeters

@@ -22,12 +22,6 @@ public class CurrencyConverterLauncher {
 		
 		CurrencyTemplate britishPound = new CurrencyTemplate("GBP",1.1764113);
 		new Currencies().addCurrencies(britishPound.getCode(), britishPound);
-		
-		CurrencyTemplate japaneseYen = new CurrencyTemplate("JPY", 0.0073063261);
-		new Currencies().addCurrencies(japaneseYen.getCode(), japaneseYen);
-		
-		CurrencyTemplate southKoreanWon = new CurrencyTemplate("KRW", 0.00074630723);
-		new Currencies().addCurrencies(southKoreanWon.getCode(), southKoreanWon);
 		//end create currencies
 		
 		//create array of currency codes
